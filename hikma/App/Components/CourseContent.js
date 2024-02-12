@@ -37,7 +37,7 @@ export default function CourseContent({course,userProgress,courseType}) {
   return (
     <View style={{marginTop:10}}>
       <Text style={{fontWeight:'bold',
-    fontSize:16}}>Course Content</Text>
+    fontSize:16}}>Course 1Content</Text>
     <FlatList
     style={{marginTop:10}}
     data={course?.Topic}
