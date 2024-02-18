@@ -5,7 +5,7 @@ import Login from './App/Pages/Login';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open la up App</Text>
+      <Text></Text>
       <Login/>
       <StatusBar style="auto" />
     </View>

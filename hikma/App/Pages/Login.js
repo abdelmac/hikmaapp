@@ -1,6 +1,7 @@
 import { View, Text, Image, StyleSheet } from 'react-native';
 import React from 'react';
 import Colors from './../Shared/Colors';
+import { Ionicons } from '@expo/vector-icons';
 
 export default function Login() {
   return (
@@ -9,7 +10,10 @@ export default function Login() {
       <View style={styles.container}>
         <Text style={styles.welcomeText}>Start de aventure</Text>
         <Text style={{textAlign:'center',marginTop:40,fontSize:25}}>Login/Signup</Text>
-        <Text style={styles.button}>Sign in with Google</Text>
+        <View style={styles.button}>
+          <Ionicons name="logo-google" size={24} color="white" style={{marginRight:10}} />
+          <Text style={{color:Colors.white}}>Sign in with Google</Text>
+        </View>
       </View>
       
       
@@ -35,5 +39,12 @@ const styles = StyleSheet.create({
   button:{
     backgroundColor:Colors.primary,
     textAlign:'center',
+    padding:10,
+    margin:40,
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'center',
+    alignItems:'center',
+    borderRadius:10,
   },
 });
